@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>LISTADO DE PELÍCULAS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!--
+  
+    <ion-item *ngFor="let item of items | async">
+      <ion-avatar>
+        <img [src]="item.imageUrl"/>
+      </ion-avatar>
+      <ion-icon name=""></ion-icon>
+      <ion-label>{{ item.name }}</ion-label>
+      <ion-label>{{ item.amount }}</ion-label>
+      <ion-label>{{ item.format }}</ion-label>
+      <ion-label>{{ item.score }}</ion-label>
+      <span (click)= "goEditItem(item.itemId)" title="editar"><ion-icon name="pencil" ></ion-icon></span>
+      <span class="text" (click)= "itemService.deleteItem(item.itemId)" title="borrar"><ion-icon name="close-circle" color="danger"></ion-icon></span>
+    </ion-item>
+  </ion-list>-->
+
+
+  <ion-button (click)="showAll()">
+    Todas
+  </ion-button>
+
+  <ion-searchbar 
+  [(ngModel)]="searchText"
+  placeholder="Search by name"  [debounce]="25" showCancelButton="always"></ion-searchbar>
+
+  <ion-list>
+    <ion-item *ngFor = "let item of items | async">
+      <ion-label>
+        <img [src]="item.imageUrl" width='150px'/>
+      </ion-label>
+      <ion-label>
+        <h1>Título: {{item.name}}</h1>
+        <h2>Precio:{{item.amount}}</h2>
+        <h2>Formato:{{item.format}}</h2>
+        <h2>Puntuación:{{item.score}}</h2>
+        <span (click)= "goEditItem(item.itemId)" title="editar"><ion-icon name="pencil" ></ion-icon></span>
+      <span class="text" (click)= "itemService.deleteItem(item.itemId)" title="borrar"><ion-icon name="close-circle" color="danger"></ion-icon></span>
+      </ion-label>
+
+    </ion-item>
+  </ion-list>
+
+<!--
+  <ion-chip *ngFor= "let item of items | async">
+    <ion-avatar>
+      <img [src]="item.imageUrl"/>
+    </ion-avatar>
+    <ion-label class="text capitalize">{{item.name}}<strong> {{item.amount}} {{item.format}} {{item.score}}</strong></ion-label>
+    <ion-icon name=""></ion-icon>
+    <span (click)= "goEditItem(item.itemId)" title="editar"><ion-icon name="pencil" ></ion-icon></span>
+    <ion-icon name=""></ion-icon>
+    <span class="text" (click)= "itemService.deleteItem(item.itemId)" title="borrar"><ion-icon name="close-circle" color="danger"></ion-icon></span>
+  </ion-chip>-->
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="addItem()" color="success">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+
+</ion-content>

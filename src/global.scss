@@ -24,3 +24,33 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+/* FUENTES PROPIAS */
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+ion-title{
+    font-family: 'Chelsea Market', cursive;
+    text-align: center;
+    background-color:#21E2F2 ;
+    font-size: 2.4em;
+}
+
+
+.text{
+    font-family: 'Chelsea Market', cursive;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+ion-content {
+    --background: none;
+    background-image: url('/assets/img/fondoapp.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

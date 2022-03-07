@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "shopping-8a5e1": {
+      "hosting": {
+        "app": [
+          "shopping-8a5e1"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "shopping-8a5e1"
+  }
+}

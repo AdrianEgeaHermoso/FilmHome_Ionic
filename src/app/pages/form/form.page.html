@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="list">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Nuevo Elemento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input class= "text" [(ngModel)]="item.name" clearInput type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Precio</ion-label>
+      <ion-input class="text" [(ngModel)]="item.amount" clearInput type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">URL de la Imagen</ion-label>
+      <ion-input class="text" [(ngModel)]="item.imageUrl" clearInput type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Formato</ion-label>
+      <ion-input class= "text" [(ngModel)]="item.format" clearInput type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Puntuación</ion-label>
+      <ion-input class="text" [(ngModel)]="item.score" clearInput type="number"></ion-input>
+    </ion-item>
+  </ion-list>
+  
+  <ion-button class="text capitalize" color="success" shape="round" (click)="addItem()" expand="block">
+    Guardar
+  </ion-button>
+  <ion-button class="text capitalize" color="danger" shape="round" href="/" expand="block">
+    Cancelar
+  </ion-button>
+</ion-content>
