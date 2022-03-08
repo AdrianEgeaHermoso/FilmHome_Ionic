@@ -3,29 +3,30 @@
     <ion-buttons slot="start">
       <ion-menu-button menu="main-menu"></ion-menu-button>
     </ion-buttons>
-    <ion-title>Login</ion-title>
+    <ion-title>FILMHOME</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-text-center ion padding">
-
+<ion-card>
+  <h1 class="text">BIENVENIDO A FILMHOME</h1>
   <ion-icon name="person-circle-outline"  style="zoom:8.0;"></ion-icon><br>
 
   <ion-grid>
     <ion-row>
     <ion-col text-center>
       
-  <ion-label position="floating">USUARIO</ion-label>
+  <ion-label class="text" position="floating">USUARIO</ion-label>
       <ion-input class= "text" clearInput type="email" [(ngModel)]="email" ></ion-input>
 
-      <ion-label position="floating">CONTRASEÑA</ion-label>
+      <ion-label class="text" position="floating">CONTRASEÑA</ion-label>
       <ion-input class= "text" clearInput type="password" [(ngModel)]="password"></ion-input>
 
       </ion-col>
       </ion-row>
   </ion-grid>
 
-  <ion-button (click)="login()" color="success">
+  <ion-button class="text" (click)="login()" color="primary">
     Login
   </ion-button><br>
 
@@ -38,6 +39,7 @@
     <ion-icon name="mail"></ion-icon>
     Recuperar contraseña
   </a><br>
+</ion-card>
 
 
 </ion-content>
