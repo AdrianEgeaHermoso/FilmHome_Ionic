@@ -40,6 +40,7 @@ ion-title{
     font-family: 'Chelsea Market', cursive;
     font-weight: 100;
     font-size: 1.5em;
+    color: black;
 }
 
 .capitalize{
@@ -57,4 +58,5 @@ ion-content {
 ion-toolbar{--background:#3393C8;}
 ion-card-header{--background:#3393C8;}
 ion-card{--background:#21E2F2;}
+ion-card-subtitle{color: black;}
 
