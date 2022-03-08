@@ -42,10 +42,16 @@ const routes: Routes = [
   },
 
   {
+    path: 'eventos',
+    loadChildren: () => import('./pages/eventos/eventos.module').then( m => m.EventosPageModule)
+  },
+
+  {
     path: '**',
     redirectTo: 'list',
     pathMatch: 'full'
   },
+  
   
   
 ];
