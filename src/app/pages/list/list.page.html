@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button menu="main-menu"></ion-menu-button>
     </ion-buttons>
-    <ion-title>LISTADO DE PELÍCULAS</ion-title>
+    <ion-title>MI COLECCIÓN</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -24,10 +24,10 @@
     </ion-item>
   </ion-list>-->
 
-
-  <ion-button (click)="showAll()">
-    Todas
+  <ion-button (click)="addItem()">
+    Añadir
   </ion-button>
+
 
   <ion-searchbar 
   [(ngModel)]="searchText"
@@ -39,10 +39,11 @@
         <img [src]="item.imageUrl" width='150px'/>
       </ion-label>
       <ion-label>
-        <h1>Título: {{item.name}}</h1>
-        <h2>Precio:{{item.amount}}</h2>
-        <h2>Formato:{{item.format}}</h2>
-        <h2>Puntuación:{{item.score}}</h2>
+        <h1 class="text"><b>Título:<ion-icon name=""></ion-icon></b> {{item.name}}</h1>
+        <h2 class="text"><b>Precio:<ion-icon name=""></ion-icon></b>{{item.amount}}</h2>
+        <h2 class="text"><b>Formato:<ion-icon name=""></ion-icon></b>{{item.format}}</h2>
+        <h2 class="text"><b>Puntuación:<ion-icon name=""></ion-icon></b>{{item.score}}</h2>
+        <br>
         <span (click)= "goEditItem(item.itemId)" title="editar"><ion-icon name="pencil" ></ion-icon></span>
       <span class="text" (click)= "itemService.deleteItem(item.itemId)" title="borrar"><ion-icon name="close-circle" color="danger"></ion-icon></span>
       </ion-label>
@@ -64,7 +65,7 @@
 
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button (click)="addItem()" color="success">
+    <ion-fab-button (click)="addItem()" color="primary">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>

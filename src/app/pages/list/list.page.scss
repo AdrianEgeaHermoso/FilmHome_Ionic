@@ -1,12 +1,19 @@
 ion-icon{
     pointer-events: none;
+    width: 80px;
+    height: 30px;
 }//quita los comentarios al pasar el raton por encima del icono
 
 span{
     padding-left: 0.5em;
 }
 
-ion-avatar{
-    width: 30px;
-    height: 30px;
+
+ion-label{
+    //background: linear-gradient(to right, #3393C8, #21E2F2);
+    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0)), url(../../../assets/img/fondoapp.jpg);
+}
+
+img{
+    margin-left: 25%;
 }

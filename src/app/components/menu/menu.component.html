@@ -7,22 +7,27 @@
   <ion-content>
     <ion-list>
 
-      <ion-item *ngIf="authService.getCurrentUser()" (click)="authService.logout()" href="/login">
-        <ion-icon slot="start" name="exit"></ion-icon>
-        <ion-label>
-          <ion-menu-toogle>Salir de la cuenta</ion-menu-toogle>
-        </ion-label>
-      </ion-item>
+      
 
-      <ion-item *ngIf="authService.getCurrentUser()">
-        <ion-icon slot="start" name="person"></ion-icon>
-          <ion-label><ion-menu-toogle>Perfil</ion-menu-toogle></ion-label>
+      <ion-item *ngIf="authService.getCurrentUser()" href="/list" >
+        <ion-icon slot="start" name="film-outline"></ion-icon>
+          <ion-label><ion-menu-toogle>Mi Colección</ion-menu-toogle></ion-label>
         </ion-item>
 
-      <ion-item>
-        <ion-icon slot="start" name="settings"></ion-icon>
-          <ion-label><ion-menu-toogle>Configuración</ion-menu-toogle></ion-label>
+        <ion-item *ngIf="authService.getCurrentUser()" href="/login">
+          <ion-icon slot="start" name="newspaper-outline"></ion-icon>
+          <ion-label>
+            <ion-menu-toogle>Eventos y Noticias</ion-menu-toogle>
+          </ion-label>
         </ion-item>
+
+        <ion-item *ngIf="authService.getCurrentUser()" (click)="authService.logout()" href="/login">
+          <ion-icon slot="start" name="exit"></ion-icon>
+          <ion-label>
+            <ion-menu-toogle>Salir de la cuenta</ion-menu-toogle>
+          </ion-label>
+        </ion-item>
+
      
     </ion-list>
   </ion-content>
