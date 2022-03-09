@@ -1,33 +1,37 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Register</ion-title>
+    <ion-title>REGISTRO</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-text-center ion-padding">
 
-  <ion-icon name="person-circle-outline"  style="zoom:8.0;"></ion-icon><br>
+  <ion-card>
+    <h1 class="text">REGISTRO NUEVO USUARIO</h1>
+    <ion-icon name="person-circle-outline" style="zoom:8.0;"></ion-icon><br>
 
-  <ion-grid>
-    <ion-row>
-    <ion-col text-center>
-      
-  <ion-label position="floating">USUARIO</ion-label>
-      <ion-input class= "text" clearInput type="email" [(ngModel)]="email" ></ion-input>
+    <ion-grid>
+      <ion-row>
+        <ion-col text-center>
 
-      <ion-label position="floating">CONTRASEÑA</ion-label>
-      <ion-input class= "text" clearInput type="password" [(ngModel)]="password"></ion-input>
+          <ion-label class="text" position="floating">USUARIO</ion-label>
+          <ion-input class="text" clearInput type="email" [(ngModel)]="email"></ion-input>
 
-      </ion-col>
+          <ion-label class="text" position="floating">CONTRASEÑA</ion-label>
+          <ion-input class="text" clearInput type="password" [(ngModel)]="password"></ion-input>
+
+        </ion-col>
       </ion-row>
-  </ion-grid>
+    </ion-grid>
 
-  <ion-button (click)="register()" color="success">
-    Aceptar
-  </ion-button><br>
+    <ion-button class="text" (click)="register()" color="primary">
+      Aceptar
+    </ion-button><br>
 
-  <ion-button color="danger" href="/login">
-    Cancelar
-  </ion-button><br>
+    <ion-button class="text" color="danger" href="/login">
+      Cancelar
+    </ion-button><br>
+
+  </ion-card>
 
 </ion-content>

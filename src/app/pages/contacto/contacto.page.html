@@ -44,4 +44,33 @@
 
     </ion-row>
   </ion-grid>
+  <ion-card class="text" id="score">
+    <p>Del 1 al 10 ¿Qué tan cinéfilo te consideras?</p>
+    <ion-range [(ngModel)] = "score" min="0" max="10" snaps color="success">
+      <ion-icon slot="start" color="primary" name="film-outline"></ion-icon>
+      <ion-icon slot="end" color="danger" name="film-outline"></ion-icon>
+    </ion-range>
+  
+    <h1>{{score}}</h1>
+  
+    <p *ngIf="score == 10">
+      ¡Eres el elegido, de ti depende el destino de la galaxia!<br>
+      <img src="../../../assets/img/anakin.jpg" width="200">
+    </p>
+    <p *ngIf="score > 0 && score <= 3">
+      Eres un Padawan, ¡¡sigue asi!!<br>
+      <img src="../../../assets/img/baby.jpg" width="200">
+    </p>
+
+    <p *ngIf="score > 3 && score <= 6">
+      Dale duro, o te quedarás en contrabandista<br>
+      <img src="../../../assets/img/han.jpg" width="200">
+    </p>
+
+    <p *ngIf="score > 6 && score <= 9">
+      Eres todo un Maestro<br>
+      <img src="../../../assets/img/master.jpg" width="200">
+    </p>
+    
+  </ion-card>
 </ion-content>

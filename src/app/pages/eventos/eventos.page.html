@@ -11,111 +11,109 @@
 
   <ion-grid>
     <ion-row>
-  
-  
-  
-  
+
+
       <ion-col size="4">
         <ion-card class="text">
           <ion-card-header>
             <ion-icon name="eye-outline" style="zoom:3.0;"></ion-icon>
             <ion-card-title>RECOMENDACIONES</ion-card-title>
           </ion-card-header>
-        
+
           <ion-card-content>
             <h1>Introduzca Su Edad</h1>
             <input type="number" [(ngModel)]="edad" min="0" max="99">
-  
+
             <p *ngIf="edad > 0 && edad <= 5">
               <b>La Patrulla Canina</b><br>
               <img src="../assets/img/patrulla.jpeg" width="200" height="250">
-          </p>
-          <p *ngIf="edad > 5 && edad <= 10">
+            </p>
+            <p *ngIf="edad > 5 && edad <= 10">
               <b>Frozen</b><br>
-              <img src="../assets/img/frozen.jpg" width="200" height="250" >
-          </p>
-          <p *ngIf="edad > 10 && edad <= 15">
+              <img src="../assets/img/frozen.jpg" width="200" height="250">
+            </p>
+            <p *ngIf="edad > 10 && edad <= 15">
               <b>El Rey León</b><br>
               <img src="../assets/img/rey.jpeg" width="200">
-          </p>
-          <p *ngIf="edad > 15 && edad <= 20">
+            </p>
+            <p *ngIf="edad > 15 && edad <= 20">
               <b>Algo Pasa Con Mary</b><br>
               <img src="../assets/img/mary.jpg" width="200">
-          </p>
-          <p *ngIf="edad > 20 && edad <= 30">
+            </p>
+            <p *ngIf="edad > 20 && edad <= 30">
               <b>Matrix</b><br>
               <img src="../assets/img/matrix1.jpg" width="200">
-          </p>
-          <p *ngIf="edad > 30 && edad <= 40">
+            </p>
+            <p *ngIf="edad > 30 && edad <= 40">
               <b>Joker</b><br>
               <img src="../assets/img/joker.jpg" width="200">
-          </p>
-  
-          <p *ngIf="edad > 40  && edad <= 50">
+            </p>
+
+            <p *ngIf="edad > 40  && edad <= 50">
               <b>La Lista De Schindler</b><br>
               <img src="../assets/img/lista.jpg" width="200">
-          </p>
-          <p *ngIf="edad > 50 && edad <= 99">
+            </p>
+            <p *ngIf="edad > 50 && edad <= 99">
               <b>Titanic</b><br>
               <img src="../assets/img/titanic.jpg" width="200">
-          </p>
+            </p>
           </ion-card-content>
         </ion-card>
       </ion-col>
-  
-  
+
+
       <ion-col size="4">
         <ion-card class="text">
           <ion-card-header>
             <ion-icon name="star-outline" style="zoom:3.0;"></ion-icon>
             <ion-card-title>HOMENAJEADOS DEL MES</ion-card-title>
           </ion-card-header>
-        
+
           <ion-card-content>
             <ul *ngFor="let image of images">
               <img [src]="image.src" alt="" style="width:60%;height:90%;">
-          </ul>
+            </ul>
           </ion-card-content>
         </ion-card>
       </ion-col>
-  
-  
-  
-  
+
+
+
+
       <ion-col size="4">
         <ion-card class="text">
           <ion-card-header>
             <ion-icon name="ticket-outline" style="zoom:3.0;"></ion-icon>
             <ion-card-title>PRÓXIMOS ESTRENOS</ion-card-title>
           </ion-card-header>
-        
+
           <ion-card-content>
             <ul>
-              <li>Spider-Man: No Way Home <b>16/12</b></li>
-              <img src="../assets/img/spidi.jpg" alt="Spiderman No Way Home" style="width:30%;height:60%;">
-              <li>Matrix Resurrections <b>22/12</b></li>
-              <img src="../assets/img/matrix.jpg" alt="Matrix Resurrections" style="width:30%;height:60%;">
-              <li>West Side Story <b>22/12</b> </li>
-              <img src="../assets/img/west.jpg" alt="West Side Story" style="width:30%;height:60%;">
-          </ul>
+              <li>Morbius <b>01/04</b></li>
+              <img src="../assets/img/morbius.jpg" alt="Morbius" style="width:30%;height:60%;">
+              <li>Animales fantásticos: Los secretos de Dumbledore <b>08/04</b></li>
+              <img src="../assets/img/animales.jpg" alt="Animales fantásticos" style="width:30%;height:60%;">
+              <li>La Ciudad Perdida <b>13/04</b> </li>
+              <img src="../assets/img/ciudad.jpg" alt="La Ciudad Perdida" style="width:30%;height:60%;">
+            </ul>
           </ion-card-content>
         </ion-card>
       </ion-col>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </ion-row>
   </ion-grid>
 
