@@ -8,21 +8,7 @@
 </ion-header>
 
 <ion-content class="ion-text-center">
-<!--
   
-    <ion-item *ngFor="let item of items | async">
-      <ion-avatar>
-        <img [src]="item.imageUrl"/>
-      </ion-avatar>
-      <ion-icon name=""></ion-icon>
-      <ion-label>{{ item.name }}</ion-label>
-      <ion-label>{{ item.amount }}</ion-label>
-      <ion-label>{{ item.format }}</ion-label>
-      <ion-label>{{ item.score }}</ion-label>
-      <span (click)= "goEditItem(item.itemId)" title="editar"><ion-icon name="pencil" ></ion-icon></span>
-      <span class="text" (click)= "itemService.deleteItem(item.itemId)" title="borrar"><ion-icon name="close-circle" color="danger"></ion-icon></span>
-    </ion-item>
-  </ion-list>-->
   <br>
   <ion-button (click)="addItem()">
     Añadir
@@ -48,18 +34,6 @@
 
     </ion-item>
   </ion-list>
-
-<!--
-  <ion-chip *ngFor= "let item of items | async">
-    <ion-avatar>
-      <img [src]="item.imageUrl"/>
-    </ion-avatar>
-    <ion-label class="text capitalize">{{item.name}}<strong> {{item.amount}} {{item.format}} {{item.score}}</strong></ion-label>
-    <ion-icon name=""></ion-icon>
-    <span (click)= "goEditItem(item.itemId)" title="editar"><ion-icon name="pencil" ></ion-icon></span>
-    <ion-icon name=""></ion-icon>
-    <span class="text" (click)= "itemService.deleteItem(item.itemId)" title="borrar"><ion-icon name="close-circle" color="danger"></ion-icon></span>
-  </ion-chip>-->
 
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
