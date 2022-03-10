@@ -33,8 +33,8 @@ export class ListPage implements OnInit {
     this.itemService.getItems().subscribe((data) => {
       this.itemsFilter = data.filter(
         (item) =>
-          item.name.includes(event.detail.value) ||
-          item.format.includes(event.detail.value)
+          item.name.toUpperCase().includes(event.detail.value.toUpperCase()) ||
+          item.format.toUpperCase().includes(event.detail.value.toUpperCase())
           
       );
       this.items = of(this.itemsFilter);

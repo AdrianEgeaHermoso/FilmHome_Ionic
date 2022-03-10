@@ -23,13 +23,13 @@
       <span class="text" (click)= "itemService.deleteItem(item.itemId)" title="borrar"><ion-icon name="close-circle" color="danger"></ion-icon></span>
     </ion-item>
   </ion-list>-->
-
+  <br>
   <ion-button (click)="addItem()">
     Añadir
   </ion-button>
 
 
-  <ion-searchbar (ionChange)="getBusqueda($event)" placeholder="Busqueda" ></ion-searchbar>
+  <ion-searchbar (ionChange)="getBusqueda($event)" placeholder="Busqueda por Título o Formato" ></ion-searchbar>
 
   <ion-list>
     <ion-item *ngFor = "let item of items | async">
