@@ -1,6 +1,6 @@
 # FilmHome_Ionic :clapper:
 
-:film_strip: Aplicación sobre el mundo del cine, y listado para gestionar las películas que un usuario puede tener como colección en su casa. :film_projector:
+:film_strip: Aplicación basada en Ionic sobre el mundo del cine, y listado para gestionar las películas que un usuario puede tener como colección en su casa. :film_projector:
 
 # VIDEO YOUTUBE EXPLICATIVO :film_strip:
 [![VER VIDEO](https://img.youtube.com/vi/rQV_dXbKRls/0.jpg)](https://www.youtube.com/watch?v=rQV_dXbKRls)
