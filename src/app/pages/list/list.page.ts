@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Item } from 'src/app/model/item';
 import { ItemService } from 'src/app/services/item.service';
 
@@ -12,17 +12,33 @@ import { ItemService } from 'src/app/services/item.service';
 })
 export class ListPage implements OnInit {
 
-  searchText:string = "";
 
   items:Observable <Item[]>;
+  itemsFilter: Item[] = [];
 
   constructor(public itemService:ItemService,
     private router:Router) {
+
+      
 
     this.items = this.itemService.getItems();
   }
 
   ngOnInit() {
+  }
+
+   /* Filtro de empleados. Busca referencias al escribir en el Search */
+
+   getBusqueda(event: any) {
+    this.itemService.getItems().subscribe((data) => {
+      this.itemsFilter = data.filter(
+        (item) =>
+          item.name.includes(event.detail.value) ||
+          item.format.includes(event.detail.value)
+          
+      );
+      this.items = of(this.itemsFilter);
+    });
   }
 
   addItem(){

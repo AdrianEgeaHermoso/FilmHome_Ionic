@@ -29,9 +29,7 @@
   </ion-button>
 
 
-  <ion-searchbar 
-  [(ngModel)]="searchText"
-  placeholder="Search by name"  [debounce]="25" showCancelButton="always"></ion-searchbar>
+  <ion-searchbar (ionChange)="getBusqueda($event)" placeholder="Busqueda" ></ion-searchbar>
 
   <ion-list>
     <ion-item *ngFor = "let item of items | async">
