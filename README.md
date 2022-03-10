@@ -6,41 +6,41 @@
 [![VER VIDEO](https://img.youtube.com/vi/9ShoxWGMb0Q/0.jpg)](https://www.youtube.com/watch?v=9ShoxWGMb0Q)
 
 
-# CARD BIENVENIDA :film_projector:
-<img height="400px" width="800px" src="/web/images/1.png">
+# PANTALLA INICIO LOGIN :film_projector:
+<img height="400px" width="800px" src="/src/assets/img/login.png">
 
-# BOTÓN FORMULARIO ALTAS PELÍCULAS :clapper:
-<img height="200px" width="1000px" src="/web/images/2.png">
+# VENTANA ERROR LOGIN :clapper:
+<img height="200px" width="1000px" src="/src/assets/img/loginerror.png">
 
-# FORMULARIO ALTA PELÍCULAS :film_strip:
-<img height="600px" width="400px" src="/web/images/15.png">
+# REGISTRO USUARIOS :film_strip:
+<img height="600px" width="400px" src="/src/assets/img/registro.png">
 
-# TABLA COLECCIÓN PELÍCULAS :film_projector:
-<img height="400px" width="1000px" src="/web/images/3.png">
+# RECUPERAR CONTRASEÑA :film_projector:
+<img height="400px" width="1000px" src="/src/assets/img/recuperar.png">
 
-# PANEL CON INPUTS PARA MODIFICAR PELÍCULAS DE LA COLECCIÓN :clapper:
-<img height="200px" width="1000px" src="/web/images/4.png">
+# PANEL CON OPCIONES :clapper:
+<img height="200px" width="1000px" src="/src/assets/img/opciones.png">
 
-# CARDS DE PRÓXIMOS EVENTOS Y PRÓXIMOS ESTRENOS :film_strip:
-<img height="400px" width="800px" src="/web/images/5.png">
+# PÁGINA LISTADO DE PELÍCULAS :film_strip:
+<img height="400px" width="800px" src="/src/assets/img/coleccion.png">
 
-# CARRUSEL DE IMÁGENES COMO RECOMENDACIONES DE LA SEMANA :film_projector:
-<img height="400px" width="800px" src="/web/images/6.png">
+# BUSQUEDA PARA FILTRAR PELÍCULAS :film_projector:
+<img height="400px" width="800px" src="/src/assets/img/coleccion3.png">
 
-# BOTÓN FORMULARIO ALTAS DESEOS :clapper:
-<img height="200px" width="1000px" src="/web/images/7.png">
+# BOTONES PARA INSERCIÓN, EDICIÓN y ELIMINACIÓN DE PELÍCULAS :clapper:
+<img height="200px" width="1000px" src="/src/assets/img/coleccion2.png">
 
-# FORMULARIO ALTA DESEOS :film_strip:
-<img height="600px" width="400px" src="/web/images/16.png">
+# FORMULARIO INSERCIÓN Y EDICIÓN DE PELÍCULAS :film_strip:
+<img height="600px" width="400px" src="/src/assets/img/formulario.png">
 
-# TABLA DESEOS :film_projector:
-<img height="200px" width="1000px" src="/web/images/8.png">
+# PÁGINA EVENTOS :film_projector:
+<img height="200px" width="1000px" src="/src/assets/img/eventos.png">
 
-# FOOTER :clapper:
-<img height="200px" width="1000px" src="/web/images/9.png">
+# INTERACCIÓN CON RECOMENDACIONES SEGÚN EDAD :clapper:
+<img height="200px" width="1000px" src="/src/assets/img/eventos2.png">
 
-# VENTANAS DE CONFIRMACIÓN TABLA MI COLECCIÓN :film_strip:
-<img height="200px" width="330px" src="/web/images/12.png"><img height="200px" width="330px" src="/web/images/11.png"><img height="200px" width="330px" src="/web/images/10.png">
+# PÁGINA CONTACTO :film_strip:
+<img height="200px" width="330px" src="/src/assets/img/contacto.png">
 
-# VENTANAS DE CONFIRMACIÓN TABLA DESEOS :film_projector:
-<img height="200px" width="400px" src="/web/images/13.png"><img height="200px" width="400px" src="/web/images/14.png">
+# INTERACCIÓN SABIDURÍA CINÉFILA :film_projector:
+<img height="200px" width="400px" src="/src/assets/img/contacto2.png">
